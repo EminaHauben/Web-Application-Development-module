@@ -6,7 +6,8 @@ const n= 30*12 //the number of payments. We take 30 years, and multiply this by 
 
 let M; //we will now calculate M. M stands for the amount of money you need to pay per month
 
-//To ensure the maths run correctly, I will take the components one by one and store them in variables in alphabetical order. The whole formula is M = P*[ r* (1 + r)^n/(1 + r)^n - 1 
+//To ensure the maths run correctly, I will take the components one by one and store them in variables in alphabetical order. The whole formula is M = P*[ r* (1 + r)^n/(1 + r)^n - 1 ]
+
 var a= (1+r)^n //First part in the brackets to the power of n
 var b= r*a //We multiply the first part by r to get the part above the divider
 var c= (1+r)^n //Part in the brackets under divisor to the power of n
