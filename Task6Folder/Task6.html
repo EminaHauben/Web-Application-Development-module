@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+      h1{
+        color: #F18F01; text-align: center; font-family: 'Times New Roman', Times, serif;
+      }
+      h2{
+        color:#64B6AC; text-align: center;
+      }
+      div{
+        color: #CB48B7; text-align: center; font-size: large;
+      }
+
+
+    </style>
+</head>
+
+<body>
+  <h1>Computer parts shop</h1> <!--Title-->
+  <h2>Whatever you need, we got it!</h2> <!--Advertisement-->
+  <div>Items</div>
+  <img src="./GPU.webp" alt="GPU intel" height="200"></img> <p>GPU: This GPU will blow your mind as playing games becomes smoother than ever</p>
+  <img src="./CPU.png" alt="CPU by Academy, a drawing" height="200"></img> <p>CPU: Performance and multitasking to the next level</p>
+  <img src="./Screen.jpg" alt="a monitor" height="200"></img> <p>Screen: With the new 4k resolution, you can feel as if you are experiencing your content as if it were in real life</p>
+  <img src="./Keyboard.jpg" alt="lenovo keyboard" height="200"></img> <p>Keyboard: truly the smoothest typing experience of all</p>
+  
+  <div>Please fill out the form</div>
+  <form id="OrderForm">
+    <label for="fname">First name:</label><br>
+    <input required type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input required type="text" id="lname" name="lname"><br><br>
+    <input type="checkbox" id="product1" name="product1" value="GPU">
+  <label for="product1"> Add GPU to my order</label><br>
+  <input type="checkbox" id="product2" name="product2" value="CPU">
+  <label for="product2"> Add CPU to my order</label><br>
+  <input type="checkbox" id="product3" name="product3" value="Screen">
+  <label for="product3"> Add Screen to my order</label><br>
+  <input type="checkbox" id="product4" name="product4" value="Keyboard">
+  <label for="product4"> Add Keyboard to my order</label><br><br>
+  <button id="orderbutton" onclick=ordersent()>Order</button>
+  </form>
+</body>
+<script> 
+
+  function ordersent() {
+    const firstName=document.getElementById("fname").value 
+    const lastName=document.getElementById("lname").value
+  window.alert(firstName +" "+ lastName+ ", Your order has been sent!")
+  }
+  
+  </script>
+
+</html>
